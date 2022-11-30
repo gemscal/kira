@@ -3,9 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Landing/Home';
 import NotFound from './components/Utils/NotFound';
 import Faq from './components/Utils/Faq';
-import ExpensesRoutes from './routes/ExpensesRoutes';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
+import Expenses from './components/Expenses/Expenses';
+import DetailExpenses from './components/Expenses/Expense/DetailExpenses';
+import NewExpenses from './components/Expenses/Expense/NewExpenses';
 
 function App() {
   return (
@@ -14,7 +16,11 @@ function App() {
       <Route path="/faq" element={<Faq />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/expenses/*" element={<ExpensesRoutes />} />
+      <Route path="/expenses"> 
+        <Route index element={<Expenses />} />
+        <Route path=":id" element={<DetailExpenses />} />
+        <Route path="new" element={<NewExpenses />} />
+      </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

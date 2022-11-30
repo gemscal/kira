@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Expenses from '../components/Expenses/Expenses';
-import NewExpenses from '../components/Expenses/Expense/NewExpenses';
-import DetailExpenses from '../components/Expenses/Expense/DetailExpenses';
+import Expenses from '../Expenses/Expenses';
+import NewExpenses from '../Expenses/Expense/NewExpenses';
+import DetailExpenses from '../Expenses/Expense/DetailExpenses';
 
 const ExpensesRoutes = () => {
   return (
