@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Landing/Home';
 import NotFound from './components/Utils/NotFound';
 import Faq from './components/Utils/Faq';
 import Login from './components/Auth/Login';
@@ -12,9 +11,8 @@ import NewExpenses from './components/Expenses/Expense/NewExpenses';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Login />} />
       <Route path="/faq" element={<Faq />} />
-      <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/expenses"> 
         <Route index element={<Expenses />} />
