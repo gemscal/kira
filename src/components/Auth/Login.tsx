@@ -15,6 +15,7 @@ const Login = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(`your email is ${formData.email} and your password is ${formData.password}`);
+    console.log(process.env.REACT_APP_BASE_URL);
   }
 
   return (
