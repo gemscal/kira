@@ -51,13 +51,13 @@ const Login = () => {
                   />                
                 </div>
               </div>
-              <p className="text-right font-bold text-xs mt-4 mb-4 text-indigo-400">Forgot password?</p>
+              <p className="text-right font-semibold text-xs mt-4 mb-4 text-indigo-400">Forgot password?</p>
               <button 
-                className="text-sm font-semibold tracking-normal text-center w-full text-white rounded p-3 bg-gradient-to-r from-indigo-400 to-pink-300 focus:outline-indigo-400"
+                className="text-sm font-semibold tracking-normal text-center w-full text-white rounded p-3 bg-gradient-to-r from-indigo-400 to-pink-300 focus:outline-indigo-500"
                 type="submit"
               >Login</button>
               <p className="text-center text-xs mt-5 mb-2">Don't have an account?
-                <span className="font-bold text-indigo-400"> Request now</span>
+                <span className="font-semibold text-indigo-400"> Request now</span>
               </p>
             </form>
           </div>
