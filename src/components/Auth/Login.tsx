@@ -28,27 +28,27 @@ const Login = () => {
             <p className="text-xs">Welcome back, please enter your credentials.</p>
             <form className="mt-2" autoComplete="off" onSubmit={handleSubmit}>
               <div className="flex flex-col items-center">
-                <div className="bg-slate-100 p-3 w-full rounded-md flex items-center border-2 border-slate-100 focus-within:border-solid focus-within:border-indigo-300">
-                  <EnvelopeIcon className="h-5 w-5 mr-2 text-indigo-400"/>
+                <div className="bg-slate-100 w-full rounded-md flex items-center border-2 border-slate-100 focus-within:border-solid focus-within:border-indigo-300">
+                  <EnvelopeIcon className="h-5 w-5 mr-2 ml-3 text-indigo-400"/>
                   <input 
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="email@example.com" 
-                    className="bg-slate-100 outline-none text-sm flex-1"
+                    className="bg-slate-100 outline-none text-sm flex-1 pr-3 py-3"
                     autoFocus
                   />                
                 </div>
-                <div className="bg-slate-100 p-3 mt-2 w-full rounded-md flex items-center border-2 border-slate-100 focus-within:border-solid focus-within:border-indigo-300">
-                  <LockClosedIcon className="h-5 w-5 mr-2 text-indigo-400"/>
+                <div className="bg-slate-100 mt-2 w-full rounded-md flex items-center border-2 border-slate-100 focus-within:border-solid focus-within:border-indigo-300">
+                  <LockClosedIcon className="h-5 w-5 mr-2 ml-3 text-indigo-400"/>
                   <input 
                     type="password"
                     name="password"
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="password"
-                    className="bg-slate-100 outline-none text-sm flex-1"
+                    className="bg-slate-100 outline-none text-sm flex-1 pr-3 py-3"
                   />                
                 </div>
               </div>
